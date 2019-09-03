@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <h2>Javascript arrow function</h2>
+        <p id="demo"></p>
+        <P id="sq"></P>
+        <script>
+            var hello;
+            hello = () => "hello benny";
+            document.getElementById("demo").innerHTML=hello();
+            const square = (x) => x*x;
+            document.getElementById("sq").innerHTML=square(10);
+
+            var points=(multiplier,bonus) => {
+                var s=multiplier*10;
+                s *= (1+bonus);
+                return s;
+                
+            };
+            document.write(points(3,2));
+            document.write("<br><br>");
+             
+            var great=(a,b) => {
+                if(a>b)
+                {
+                    document.write(" a is greatest");
+                }
+                else
+                {
+                    document.write("b is greatest");
+                }
+            };
+            great(10,9);
+            </script>
+    </body>
+</html>
